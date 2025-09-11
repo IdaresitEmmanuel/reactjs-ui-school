@@ -29,7 +29,7 @@ export default function P1() {
           libero risus semper habitant arcu eget. Et integer facilisi eget diam.
         </p>
         <button>
-          <p className="button-text">Explore</p>
+          <span className="button-text">Explore</span>
         </button>
       </div>
 

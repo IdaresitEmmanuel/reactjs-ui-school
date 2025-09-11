@@ -30,28 +30,6 @@ p{
   line-height: normal;
 }
 
-button{
-  background-color: rgb(var(--text-color));
-  border: none;
-  padding: 0px 48px;
-  border-radius: 16px;
-  cursor: pointer;
-  height: 54px;
-  align-items: center;
-}
-
-button:hover{
-  background-color: rgba(var(--text-color), 0.5);
-}
-
-.button-text{
-  height: 18px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 18px;
-}
-
 .grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
