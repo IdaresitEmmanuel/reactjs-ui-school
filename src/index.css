@@ -3,6 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
   margin: 0;
+  padding: 0;
 
   color-scheme: light dark;
   color: #000;
@@ -22,6 +23,12 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 button{

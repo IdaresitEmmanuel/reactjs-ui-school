@@ -1,0 +1,38 @@
+:root{
+    --text-color: 37, 37, 37;
+    margin: 0;
+    padding: 64px;
+}
+
+h1{
+    font-size: 88px;
+    font-weight: bold;
+    line-height: 104px;
+    color: rgb(var(--text-color));
+    margin: 0;
+    margin-bottom: 69px;
+}
+
+.catalogs{
+    display: flex;
+    gap: 56px;
+}
+
+.index{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(var(--text-color), 0.55);
+    margin-bottom: 4px;
+}
+
+p{
+    font-size: 24px;
+    font-weight: normal;
+    color: rgb(var(--text-color), 0.80);
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+img{
+    width: 100%;
+}

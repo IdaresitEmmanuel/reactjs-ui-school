@@ -1,0 +1,35 @@
+:root{
+    --text-color: 37, 37, 37;
+  margin: 0;
+  padding: 64px;
+}
+
+.intro{
+    display: flex;
+    margin-bottom: 120px;
+}
+
+h1{
+    flex: 2;
+    font-size: 88px;
+    color: rgb(var(--text-color));
+    line-height: 80px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.right{
+    max-width: 526px;
+}
+
+p{  
+    flex: 1;
+    font-size: 26px;
+    color: rgb(var(--text-color), 0.8);
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+img{
+    width: 100%;
+}
