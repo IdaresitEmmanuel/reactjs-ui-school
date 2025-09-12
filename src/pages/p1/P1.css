@@ -14,7 +14,7 @@
 }
 
 h1{
-  font-weight: 700;
+  font-weight: bold;
   font-size: 64px;
   text-align: center;
   color: rbg(var(--text-color));
