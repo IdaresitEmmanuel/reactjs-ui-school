@@ -1,0 +1,23 @@
+
+.text-ring{
+    height:  calc(var(--radius) * 2 + var(--font-size)); 
+     position: relative;
+     aspect-ratio: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.text-ring [style*="--index"] {
+    font-family: Times;
+    font-size: calc(var(--font-size, 14));
+    color: #333333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) 
+        rotate(calc(-360deg / var(--total) * var(--index))) 
+        translateY(calc(var(--radius, 5) * -1))
+        rotate(180deg);
+
+}

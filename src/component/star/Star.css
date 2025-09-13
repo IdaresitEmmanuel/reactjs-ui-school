@@ -1,0 +1,61 @@
+
+.star {
+  width: 136px;
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-block;
+  /* allow the scaled border to be visible outside box */
+  overflow: visible;
+  /* the star polygon (16 points alternating outer/inner) */
+  clip-path: polygon(
+    50% 0%,
+    57.65% 31.52%,
+    85.36% 14.64%,
+    68.48% 42.35%,
+    100% 50%,
+    68.48% 57.65%,
+    85.36% 85.36%,
+    57.65% 68.48%,
+    50% 100%,
+    42.35% 68.48%,
+    14.64% 85.36%,
+    31.52% 57.65%,
+    0% 50%,
+    31.52% 42.35%,
+    14.64% 14.64%,
+    42.35% 31.52%
+  );
+  background: black;
+  transform-origin: 50% 50%;
+}
+
+.star::before {
+  content: "";
+  position: absolute;
+  inset: 0;                 /* cover same box */
+  /* same clip-path repeated for compatibility */
+  clip-path: polygon(
+    50% 0%,
+    57.65% 31.52%,
+    85.36% 14.64%,
+    68.48% 42.35%,
+    100% 50%,
+    68.48% 57.65%,
+    85.36% 85.36%,
+    57.65% 68.48%,
+    50% 100%,
+    42.35% 68.48%,
+    14.64% 85.36%,
+    31.52% 57.65%,
+    0% 50%,
+    31.52% 42.35%,
+    14.64% 14.64%,
+    42.35% 31.52%
+  );
+  background: white;
+  z-index: -1;              /* behind the main star */
+  transform-origin: 50% 50%;
+  transform: scale(.9);
+  /* soften small aliasing by a tiny blur (optional) */
+  /* filter: blur(.25px); */
+}
