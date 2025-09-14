@@ -1,10 +1,13 @@
 :root{
     --text-color: 37, 37, 37;
     margin: 0;
+}
+
+.container{
     padding: 64px;
 }
 
-h1{
+.header1{
     font-size: 88px;
     font-weight: bold;
     line-height: 104px;
@@ -25,7 +28,7 @@ h1{
     margin-bottom: 4px;
 }
 
-p{
+.paragraph{
     font-size: 24px;
     font-weight: normal;
     color: rgb(var(--text-color), 0.80);
@@ -33,6 +36,6 @@ p{
     margin-bottom: 24px;
 }
 
-img{
+.img{
     width: 100%;
 }

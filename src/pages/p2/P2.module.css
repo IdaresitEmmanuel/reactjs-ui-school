@@ -1,5 +1,8 @@
 :root{
     --text-color: 37, 37, 37;
+}
+
+.container{
      padding: 64px; 
 }
 
@@ -15,7 +18,7 @@
     flex: 1;
 }
 
-h1{
+.header1{
     font-size: 56px;
     font-weight: bold;
     line-height: 80px;
@@ -24,7 +27,7 @@ h1{
     text-align: start;
 }
 
-p{
+.paragraph{
     font-size: 26;
     font-weight: normal;
     margin: 0;
@@ -32,25 +35,25 @@ p{
     color: rgba(var(--text-color), 0.8);
 }
 
- .intro-slides{
+ .intro_slides{
     flex: 2;
     display: flex;
     align-items: flex-start;
     gap: 35px;
 }
 
-.intro-slides :nth-child(2){
+.intro_slides :nth-child(2){
     margin-top: 152px;
 }
 
-.hero-box{
+.hero_box{
     max-width: 408px;
     height: 480px;
     overflow: hidden;
     border-radius: 16px;
 } 
 
-.hero-img{
+.hero_img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -63,31 +66,31 @@ p{
     gap: 40px;
 }
 
-.catalog-unit{
+.catalog_unit{
     gap: 4px;
     display: flex;
     flex-direction: column;
 }
 
-.catalog-title{
+.catalog_title{
     font-size: 40px;
     font-weight: bold;
     color: rgba(var(--text-color), 0.25);
 }
 
-.catalog-img-box{
+.catalog_img_box{
     width: 100%;
     aspect-ratio: 1;
     overflow: hidden;
     border-radius: 16px;
 }
 
-.catalog-img{
+.catalog_img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease-in-out;
 }
-.catalog-img:hover{
+.catalog_img:hover{
     transform: scale(1.1);
 }

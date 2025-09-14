@@ -12,7 +12,7 @@
     margin-bottom: 70px;
 }
 
-h1{
+.header1{
     margin: 0;
     font-family: 'Playfair Display';
     font-size: 64px;
@@ -22,19 +22,19 @@ h1{
     margin-bottom: 32px;
 }
 
-p {
+.paragraph {
     font-size: 24px;
     font-weight: normal;
     line-height: 30px;
     color: #333333;
 }
 
-.ac-btn{
+.ac_btn{
     display: flex;
     gap: 32px;
 }
 
-.hollow-btn {
+.hollow_btn {
     background-color: transparent;
     border: 1px solid #333333;
     color: #333333;
@@ -49,11 +49,11 @@ p {
     padding: 24px;
 }
 
-.social-box{
+.social_box{
     max-width: 91px;
 }
 
-.social-box img {
+.social_box img {
     width: 24px;
     height: 24px;
     margin-bottom: 8px;
@@ -80,7 +80,7 @@ p {
     position: absolute;
 }
 
-.showcase-img-position-box{
+.showcase_img_position_box{
     width: 480px;
     height: 628px;
     /* background: #fff; */
@@ -89,7 +89,7 @@ p {
 
 }
 
-.showcase-l-box{
+.showcase_l_box{
     position: absolute;
     --width: 480px;
     --height: 568px;
@@ -102,12 +102,12 @@ p {
 
 }
 
-.eight-star{
+.eight_star{
     left: -68px;
     top: -36px;
 }
 
-.showcase-r-box{
+.showcase_r_box{
     position: absolute;
     --width: 310px;
     --height: 476px;
@@ -120,7 +120,7 @@ p {
 
 }
 
-.showcase-img-box{
+.showcase_img_box{
     width: 480px;
     height: 628px;
     background: black;
@@ -130,19 +130,21 @@ p {
     object-fit: cover;
 }
 
-.diamond-l{
- width: 75px;
+.diamond_l{
+    width: 75px;
+    height: auto;
     left: 39px;
     top: 69px;
 }
 
-.diamond-r{
+.diamond_r{
     width: 103px;
+    height: auto;
     right: 17px;
     bottom: 27px;
 }
 
-.show-tag{
+.show_tag{
     background-color: #685FD4;
     padding: 16px 24px;
     border-radius: 16px;

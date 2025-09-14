@@ -1,4 +1,4 @@
-import "./P1.css";
+import styles from "./P1.module.css";
 
 interface Image {
   name: string;
@@ -18,28 +18,28 @@ const imageList: Image[] = [
 
 export default function P1() {
   return (
-    <>
-      <div className="intro">
-        <h1>
+    <div className={styles.container}>
+      <div className={styles.intro}>
+        <h1 className={styles.header1}>
           Discover the beauty
           <br /> around the world
         </h1>
-        <p>
+        <p className={styles.paragraph}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in
           libero risus semper habitant arcu eget. Et integer facilisi eget diam.
         </p>
         <button>
-          <span className="button-text">Explore</span>
+          <span className={styles.button_text}>Explore</span>
         </button>
       </div>
 
-      <div className="grid">
+      <div className={styles.grid}>
         {imageList.map((img, key) => (
-          <div key={key} className="grid-item">
-            <img src={img.href} className="grid-item-img"/>
+          <div key={key} className={styles.grid_item}>
+            <img src={img.href} className={styles.grid_item_img} />
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }

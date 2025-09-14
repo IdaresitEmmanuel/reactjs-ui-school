@@ -1,4 +1,4 @@
-import "./P5.css"
+import styles from "./P5.module.css"
 
 interface CatalogUnit{
     description: string;
@@ -12,18 +12,18 @@ const catalogs: CatalogUnit[] = [
 ];
 
 export default function P5(){
-    return <>
-        <h1>Projects and practice</h1>
-        <div className="catalogs">
+    return <div className={styles.container}>
+        <h1 className={styles.header1}>Projects and practice</h1>
+        <div className={styles.catalogs}>
             {
                 catalogs.map((catalog, index)=> (
                     <div key={index}>
-                        <span className="index">{index < 10 ? `0${index+1}`: index+1}</span>
-                        <p>{catalog.description}</p>
-                        <img src={catalog.href} />
+                        <span className={styles.index}>{index < 10 ? `0${index+1}`: index+1}</span>
+                        <p className={styles.paragraph}>{catalog.description}</p>
+                        <img src={catalog.href} className={styles.img}/>
                     </div>
                 ))
             }
         </div>
-    </>
+    </div>
 }

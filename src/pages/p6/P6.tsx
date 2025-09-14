@@ -1,5 +1,5 @@
 import CircularText from "../../component/circular text/CircularText";
-import "./P6.css";
+import styles from "./P6.module.css";
 import Timer from "../../assets/p6/timer.svg";
 import Sun from "../../assets/p6/sun.svg";
 import Star from "../../assets/p6/star.svg";
@@ -23,50 +23,50 @@ const socials: Social[] = [
 export default function P6() {
   return (
     <>
-      <div className="box">
+      <div className={styles.box}>
         {/* Left Side */}
         <div>
           <CircularText radius={50}>
             <img src={Timer} style={{ height: "28px", display: "block" }} />
           </CircularText>
-          <div className="intro">
-            <h1>THE eWatch with the newest microchip technology</h1>
-            <p>
+          <div className={styles.intro}>
+            <h1 className={styles.header1}>THE eWatch with the newest microchip technology</h1>
+            <p className={styles.paragraph}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
               in libero risus semper habitant arcu eget. Et integer facilisi
               eget diam.
             </p>
-            <div className="ac-btn">
+            <div className={styles.ac_btn}>
               <button>Order now</button>
-              <button className="hollow-btn">Explore more</button>
+              <button className={styles.hollow_btn}>Explore more</button>
             </div>
           </div>
-          <div className="socials">
+          <div className={styles.socials}>
             {socials.map((social, index) => (
-              <div key={index} className="social-box">
+              <div key={index} className={styles.social_box}>
                 <img src={social.href} />
-                <p className="social-desc">{social.description}</p>
+                <p className={`${styles.social_desc} ${styles.paragraph}`}>{social.description}</p>
               </div>
             ))}
           </div>
         </div>
         {/* Right side */}
-        <div className="showcase">
-          <div className="showcase-img-position-box">
-            <div className="showcase-l-box">
-              <div className="eight-star">
+        <div className={styles.showcase}>
+          <div className={styles.showcase_img_position_box}>
+            <div className={styles.showcase_l_box}>
+              <div className={styles.eight_star}>
                 <EightStar />
               </div>
             </div>
-            <div className="showcase-r-box"></div>
-            <div className="showcase-img-box">
+            <div className={styles.showcase_r_box}/>
+            <div className={styles.showcase_img_box}>
               <img src="/images/p6/showcase.png" />
-              <img src={Diamond} className="diamond-l" />
-              <img src={Diamond} className="diamond-r" />
+              <img src={Diamond} className={styles.diamond_l} />
+              <img src={Diamond} className={styles.diamond_r} />
               
             </div>
-            <div className="show-tag t">Award winning product</div>
-              <div className="show-tag b">Ergonomic design</div>
+            <div className={`${styles.show_tag} ${styles.t}`}>Award winning product</div>
+              <div className={`${styles.show_tag} ${styles.b}`}>Ergonomic design</div>
           </div>
         </div>
       </div>

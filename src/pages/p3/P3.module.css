@@ -1,15 +1,18 @@
 :root{
     --text-color: 37, 37, 37;
-  margin: 0;
-  padding: 64px;
 }
+
+.container{
+     padding: 64px; 
+}
+
 
 .intro{
     display: flex;
     margin-bottom: 120px;
 }
 
-h1{
+.header1{
     flex: 2;
     font-size: 88px;
     color: rgb(var(--text-color));
@@ -22,7 +25,7 @@ h1{
     max-width: 526px;
 }
 
-p{  
+.paragraph{  
     flex: 1;
     font-size: 26px;
     color: rgb(var(--text-color), 0.8);
@@ -30,6 +33,6 @@ p{
     margin-bottom: 16px;
 }
 
-img{
+.img{
     width: 100%;
 }

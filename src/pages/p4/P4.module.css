@@ -1,7 +1,6 @@
 :root{
     --text-color: 37, 37, 37;
     margin: 0;
-    
 }
 
 .box{
@@ -28,7 +27,7 @@ img{
     padding-bottom: 80px;
 }
 
-h1{
+.header1{
     font-size: 64px;
     font-weight: bold;
     color: rgb(var(--text-color));
@@ -37,14 +36,14 @@ h1{
     margin-bottom: 32px;
 }
 
-p{
+.paragraph{
     font-size: 26px;
     color: rgba(var(--text-color), 0.8);
     margin: 0;
     margin-bottom: 32px;
 }
 
-button{
+.button{
     margin-bottom: 88px;
 }
 
@@ -54,7 +53,7 @@ button{
     color: rgba(var(--text-color), 0.55);
 }
 
-.offer-desc{
+.offer_desc{
     font-size: 24px;
     margin: 0;
     margin-bottom: 40px;
