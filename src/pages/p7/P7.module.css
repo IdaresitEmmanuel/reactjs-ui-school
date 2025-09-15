@@ -54,6 +54,7 @@ max-width: 316px;
     object-fit: cover;
     transition: transform .5s ease-in-out
 }
+
 .catalog_img:hover{
     transform: scale(1.1)
 }

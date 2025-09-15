@@ -6,7 +6,7 @@ interface Route {
   href: string;
 }
 
-const routes: Route[] = Array.from({ length: 7 }, (_, index) => ({
+const routes: Route[] = Array.from({ length: 8 }, (_, index) => ({
   name: (index + 1).toString(),
   href: `/p${index + 1}`,
 }));

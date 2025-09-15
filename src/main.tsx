@@ -10,6 +10,7 @@ import P4 from "./pages/p4/P4.tsx";
 import P5 from "./pages/p5/P5.tsx";
 import P6 from "./pages/p6/P6.tsx";
 import P7 from "./pages/p7/P7.tsx";
+import P8 from "./pages/p8/P8.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -23,6 +24,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/p5" element={<P5 />} />
         <Route path="/p6" element={<P6 />} /> 
         <Route path="/p7" element={<P7 />} /> 
+        <Route path="/p8" element={<P8 />} /> 
       </Routes>
     </BrowserRouter>
   </StrictMode>
